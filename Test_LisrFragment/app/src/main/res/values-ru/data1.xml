@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data1">
+        <item>
+            водка
+        </item>
+        <item>
+            ччаджанмён
+        </item>
+        <item>
+            смесь
+        </item>
+        <item>
+            Блюдо китайской кухни
+        </item>
+        <item>
+            жаренный картофель
+        </item>
+    </string-array>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data1">
+        <item>
+            보드카
+        </item>
+        <item>
+            짜장면
+        </item>
+        <item>
+            짬봉
+        </item>
+        <item>
+            탕수육
+        </item>
+        <item>
+            감자 튀김
+        </item>
+    </string-array>
+</resources>

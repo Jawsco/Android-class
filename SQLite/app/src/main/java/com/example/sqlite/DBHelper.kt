@@ -13,12 +13,11 @@ class DBHelper(context : Context) : SQLiteOpenHelper(context, "Test.db", null, 1
     {
         Log.d("msg", "on create")
 
-        var sql = "create table TestTable (" +
-                "idx integer primary key autoincrement, " + //id
-                "textData text not null, " + //가변형문자열
-                "intData integer not null, " + //정수
-                "floatData real not null, " + //실수
-                "dateData date not null" + //날짜
+        var sql = "create table Student (" +
+                "idx integer primary key autoincrement, " +
+                "name text not null, " +
+                "age integer not null, " +
+                "dateData date not null" +
                 ")"
 
         p0?.execSQL(sql)

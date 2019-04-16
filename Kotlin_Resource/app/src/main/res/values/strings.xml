@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kotlin_Resource</string>
+    <string name="str1">원래 문자열</string>
+    <string name="str2">텍스트뷰 문자열 리소스에서 가져오기</string>
+    <string name="btn1">문자열 리소스</string>
+    <string name="btn2">문자열 배열</string>
+    <string name="btn3">색상 관리</string>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Kotlin_Locale</string>
+    <string name="hi">hello</string>
+</resources>

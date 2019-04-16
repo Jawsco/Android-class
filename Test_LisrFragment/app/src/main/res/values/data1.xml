@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data1">
+        <item>
+            Vodka
+        </item>
+        <item>
+            jajangmyeon
+        </item>
+        <item>
+            jjamppong
+        </item>
+        <item>
+            Sweet and Sour Pork
+        </item>
+        <item>
+            French fries
+        </item>
+    </string-array>
+</resources>

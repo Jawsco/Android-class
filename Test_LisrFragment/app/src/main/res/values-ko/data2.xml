@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data2">
+        <item>
+            물, 알코올
+        </item>
+        <item>
+            밀가루, 춘장
+        </item>
+        <item>
+            고춧가루, 밀가루
+        </item>
+        <item>
+            튀김 가루, 돼지고기
+        </item>
+        <item>
+            감자, 기름
+        </item>
+    </string-array>
+</resources>

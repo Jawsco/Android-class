@@ -1,3 +1,5 @@
+package com.example.kotlin_customprovider
+
 import android.content.ContentProvider
 import android.content.ContentValues
 import android.database.Cursor
@@ -6,6 +8,11 @@ import java.lang.UnsupportedOperationException
 
 class CPTest : ContentProvider()
 {
+    override fun insert(uri: Uri, values: ContentValues?): Uri?
+    {
+
+    }
+
     override fun delete(uri: Uri, selection: String?, selectionArgs: Array<String>?): Int
     {
         var helper = DBHelper(context)
