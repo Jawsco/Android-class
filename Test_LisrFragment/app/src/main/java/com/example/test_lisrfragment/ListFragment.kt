@@ -30,6 +30,7 @@ class ListFragment : ListFragment()
 //    var data2 = resources.getStringArray(R.array.data2)//재료
     var data3 = arrayOf(500, 5000, 6000, 10000, 1000)
     var list = ArrayList<HashMap<String, Any>>()
+    var checkItem = setOf<String>()
 
     var count : Int = 0
 
@@ -42,7 +43,7 @@ class ListFragment : ListFragment()
         button = view.findViewById<Button>(R.id.button)
 
         button?.setOnClickListener { view ->
-            textView?.text = count.toString() + "원 입니다"
+            textView?.text = count.toString() + "원 입니다\n"
         }
 
         var idx = 0
@@ -67,8 +68,17 @@ class ListFragment : ListFragment()
     override fun onListItemClick(l: ListView?, v: View?, position: Int, id: Long)
     {
         var temp = ""
-        textView?.append(list[position].get("data1").toString() + "\n")
         temp = list[position].get("data3").toString()
-        count += temp.toInt()
+
+        if(textView?.text!!.contains(list[position].get("data1").toString().toRegex())) //아이템이 있을때
+        {
+            textView?.text = textView?.text?.replace((list[position].get("data1").toString()+"\n").toRegex(), "")
+            count -= temp.toInt()
+        }
+        else //아이템이 없을때
+        {
+            textView?.append(list[position].get("data1").toString() + "\n")
+            count += temp.toInt()
+        }
     }
 }
